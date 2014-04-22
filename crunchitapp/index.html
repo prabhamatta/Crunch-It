@@ -96,22 +96,32 @@
     <div class="container">
 
       <div class="masthead">
-         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="index">Home</a></li>
-          <li><a href="funding">Funding</a></li>
-          <li ><a href="categories">Categories</a></li>
-        </ul>   
+
         <h3 class="muted">Crunch It</h3>
         <hr>
       </div>
       <ul class="nav nav-tabs">
-        <li class="active">
-          <a href="#">Something1</a>
-        </li>
-        <li><a href="#">Something2</a></li>
+          <li class="active"><a href="index">Home</a></li>
+          <li ><a href="funding">Funding</a></li>
+          <li ><a href="categories">Categories</a></li>
       </ul>
 
-      <input type="text" id="search" class="search-query" placeholder="Search for an Organization"/> 
+     
+    <div >
+       <div class="slider">
+        Number of Rounds: 0<input type="range" id="rounds"  min="1" max="10" onchange="updateSlider(this.value)">10
+      </div>
+       <div class="slider">
+        Total Funding: 0<input type="range" id="funding" min="1" max="1000000" onchange="updateSlider(this.value)">$ 1M
+      </div>
+
+      <div id="sliderAmount"></div>
+    </div>
+    </br>
+
+    <div>
+            <input type="text" id="search" class="search-query" placeholder="Search for an Location"/> 
+
       <div class="btn-group open">
           <button class="btn dropdown-toggle" data-toggle="dropdown">Categories <span class="caret"></span></button>
             <ul class="dropdown-menu">
@@ -127,6 +137,7 @@
         <button id="pct" class="btn">Percentage</button>
       </div>
       <button id="search-btn" class = "btn btn-info">Generate Map</button>
+    </div>
 
       <h2>Geographic Distribution</h2>
       
@@ -149,6 +160,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="static/js/jquery.js"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+
    <script type="text/javascript" src="static/js/geo.js"></script>
     <script src="static/js/bootstrap-transition.js"></script>
     <script src="static/js/bootstrap-alert.js"></script>
