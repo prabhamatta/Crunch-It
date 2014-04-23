@@ -1,4 +1,4 @@
-company_permalink,company_name,company_category_code,company_country_code,company_state_code,company_region,company_city,acquirer_permalink,acquirer_name,acquirer_category_code,acquirer_country_code,acquirer_state_code,acquirer_region,acquirer_city,acquired_at,acquired_month,acquired_quarter,acquired_year, price_amount ,price_currency_code
+company_permalink,company_name,company_category_code,company_country_code,company_state_code,company_region,company_city,acquirer_permalink,acquirer_name,acquirer_category_code,acquirer_country_code,acquirer_state_code,acquirer_region,acquirer_city,acquired_at,acquired_month,acquired_quarter,acquired_year,price_amount,price_currency_code
 /company/waywire,#waywire,news,USA,NY,New York,New York,/company/magnify,Magnify,games_video,USA,NY,New York,New York,10/17/2013,2013-10,2013-Q4,2013,,USD
 /company/fluff-friends,(fluff)Friends,,,,unknown,,/company/social-gaming-network,Social Gaming Network,games_video,USA,CA,Los Angeles,Beverly Hills,9/16/2008,2008-09,2008-Q3,2008,,USD
 /company/1-nation-technology,1 Nation Technology,,,,unknown,,/company/vology,Vology,other,,,unknown,,1/1/2006,2006-01,2006-Q1,2006,,USD
