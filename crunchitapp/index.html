@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Crunch It</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <link href="static/css/home.css" rel="stylesheet">
+    <script type="text/javascript" src="static/js/d3.v2.min.js"></script>
+    <style type="text/css">
+      /*body {
+        padding-top: 20px;
+        padding-bottom: 60px;
+      }
+
+      /* Custom container */
+      .container {
+        margin: 0 auto;
+        max-width: 1300px;
+      }
+      .container > hr {
+        margin: 60px 0;
+      }
+
+    
+      /* Customize the navbar links to be fill the entire space of the .navbar */
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 1%;
+        float: none;
+      }
+      .navbar .nav li a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.75);
+        border-right: 1px solid rgba(0,0,0,.1);
+      }
+      .navbar .nav li:first-child a {
+        border-left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+      }
+    </style>
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="masthead">
+
+        <h2 class="muted">Crunch It</h2>
+        <hr>
+      </div>
+      <ul class="nav nav-tabs">
+          <li class="active"><a href="index">Home</a></li>
+          <li ><a href="funding">Funding</a></li>
+          <li ><a href="categories">Categories</a></li>
+      </ul>
+<div id="content">
+     <div  id="leftsidebar">
+    <div >
+       <div class="slider">
+        Number of Rounds: 
+        <div>0 <input type="range" id="rounds"  min="1" max="10" onchange="updateSlider(this.value)"> 10</div>
+      </div>
+       <div class="slider">
+        Total Funding: 
+        <div>0 <input type="range" id="funding" min="1" max="1000000" onchange="updateSlider(this.value)"> $ 1M</div>
+      </div>
+
+      <div id="sliderAmount"></div>
+    </div>
+    </br>
+
+      <div class="slider">
+            <input type="text" id="search" class="search-query" placeholder="Search for an Location" /> 
+      </div>
+      <div  class="slider">
+      <div class="btn-group open">
+          <button class="btn dropdown-toggle" data-toggle="dropdown">Product Category <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">analytics</a></li>
+              <li><a href="#">ecommerce</a></li>
+              <li><a href="#">games_video</a></li>
+              <li class="divider"></li>
+              <li><a href="#">hardware</a></li>
+              <li><a href="#">manufacturing</a></li>
+
+            </ul>
+      </div>
+    </div>
+   
+      <button id="search-btn" class = "btn btn-info">Show Analysis</button>
+    </div>
+    <div id="rightsidebar">
+ <div  class="slider" style="float:right">
+
+      <div class="btn-group" >
+        <button id="count" class="btn active">Count</button>
+        <button id="pct" class="btn">Percentage</button>
+      </div>
+    </div>
+      <h2>Geographic Distribution</h2>
+      
+      <div id="chart"></div>
+      <h2>Time Series Chart</h2>
+      <div id="time-series"></div>
+      <div id="chart2"></div>
+
+
+      <!-- Example row of columns -->
+    </div>
+  </div>
+
+      <div id="footer">
+                  <hr>
+        <p>&copy; Prabhavathi Matta, Kate Rushton</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="static/js/jquery.js"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+
+   <script type="text/javascript" src="static/js/geo.js"></script>
+    <script src="static/js/bootstrap-transition.js"></script>
+    <script src="static/js/bootstrap-alert.js"></script>
+    <script src="static/js/bootstrap-modal.js"></script>
+    <script src="static/js/bootstrap-dropdown.js"></script>
+    <script src="static/js/bootstrap-scrollspy.js"></script>
+    <script src="static/js/bootstrap-tab.js"></script>
+    <script src="static/js/bootstrap-tooltip.js"></script>
+    <script src="static/js/bootstrap-popover.js"></script>
+    <script src="static/js/bootstrap-button.js"></script>
+    <script src="static/js/bootstrap-collapse.js"></script>
+    <script src="static/js/bootstrap-carousel.js"></script>
+    <script src="static/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
