@@ -12,3 +12,5 @@ Software involved:
 * matplotlib
 * scikit-learn
 * html, css, javascript
+
+View ipython notebook here:  http://nbviewer.ipython.org/gist/anonymous/11203905
